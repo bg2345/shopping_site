@@ -56,7 +56,7 @@ function showProducts(res) {
 
 
 // step 2: get a response from products.json using jQuery
-$.get('../../products.json', showProducts)
+$.get('https://raw.githubusercontent.com/bg2345/shopping_site/master/products.json', showProducts)
 
 /******************************
 End of loading products
