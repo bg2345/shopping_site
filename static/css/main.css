@@ -1,0 +1,32 @@
+body {
+  overflow-x: hidden;
+}
+
+.extra-margin-lg {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card {
+  padding: 15px;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 130%;
+}
+
+.card-subtitle {
+  font-style: italic;
+  font-size: 90%;
+}
+
+.card>button {
+  margin: 15px auto;
+  width: 90%;
+}
+
+.top-margin-md {
+  margin-top: 50px;
+}

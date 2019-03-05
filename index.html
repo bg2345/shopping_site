@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home - Shopping Cart</title>
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./static/css/main.css">
+  </head>
+  <body>
+    <header>
+          <div class="row">
+            <div class="col-md-12">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="./index.html">Shopping Cart</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./checkout.html">Checkout</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Total: <span class="total">$0.00</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div> <!-- ends col 12 -->
+          </div> <!-- ends row for nav -->
+        </header>
+
+<div class="container extra-margin-lg">
+  <div class="row">
+    <div class="col-md-9" id="products">
+      <!-- todo: call and display all products -->
+
+
+    </div> <!-- ends col 9 -->
+    <div class="col-md-3" id="cart">
+      <!-- todo: load and display cart table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>$</th>
+            <th>Rem.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--create a row for each product in cart -->
+
+        </tbody>
+        <tfoot>
+          <th colspan="2">Total:</th>
+          <!-- TODO: update total price -->
+          <th class="total">$0.00</th>
+        </tfoot>
+      </table>
+
+    </div> <!-- ens col 3 -->
+  </div> <!-- ends row -->
+</div> <!-- ends container -->
+
+
+
+
+    <!-- jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap 4 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Own JS -->
+    <script src="./static/js/app.js"></script>
+  </body>
+</html>
