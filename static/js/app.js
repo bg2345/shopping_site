@@ -56,7 +56,7 @@ function showProducts(res) {
 
 
 // step 2: get a response from products.json using jQuery
-$.get('https://raw.githubusercontent.com/bg2345/shopping_site/master/products.json', showProducts)
+$.get('https://bg2345.github.io/shopping_site/products.json', showProducts)
 
 /******************************
 End of loading products
@@ -89,7 +89,7 @@ function addItem(id) {
   // to add all item information use jQuery to grab item from json
   $.ajax({
     type: "GET",
-    url: "../../products.json",
+    url: "https://bg2345.github.io/shopping_site/products.json",
     async: false,
     success: function(res) {
       for (let i in res) {
@@ -184,7 +184,7 @@ function showCart() {
 
   let cart_table = document.getElementById('cart')
   // if cart is empty, set the table in the cart col md 3 section to display none
-  if (cart.length < 1) {
+  if (cart.length == 0 || cart.length == 'null') {
     cart_table.style.display = "none";
   } else {
     cart_table.style.display = "block";
